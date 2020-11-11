@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="ToDo.WPF.Core.Controls.UserTasksInputControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converters="clr-namespace:ToDo.WPF.Core.Converters"
+             xmlns:validators="clr-namespace:ToDo.WPF.Core.Validators"
+             xmlns:local="clr-namespace:ToDo.WPF.Core"
+             xmlns:models="clr-namespace:ToDo.WPF.Core.Models"
+             x:Name="Control" d:DesignHeight="450"
+             d:DesignWidth="150" mc:Ignorable="d">
+    <DockPanel VerticalAlignment="Center" LastChildFill="True">
+        <TextBlock HorizontalAlignment="Left" DockPanel.Dock="Left">What needs to be done?</TextBlock>
+        <Grid Margin="5,0,0,0">
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <converters:CountToBoolConverter x:Key="CountToBoolConverter" />
+                    <DataTemplate x:Key="SingleTaskTemplate">
+                        <TextBlock>+</TextBlock>
+                    </DataTemplate>
+                    <DataTemplate x:Key="MultipleTaskTemplate">
+                        <TextBlock>++</TextBlock>
+                    </DataTemplate>
+                    <DataTemplate x:Key="AddButtonContentTemplateSelector">
+                        <ContentControl DataContext="{Binding Path=Input, Source={x:Reference Control}}">
+                            <ContentControl.Style>
+                                <Style TargetType="{x:Type ContentControl}">
+                                    <Setter Property="ContentTemplate" Value="{StaticResource SingleTaskTemplate}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Count, Converter={StaticResource CountToBoolConverter}}" Value="True">
+                                            <Setter Property="ContentTemplate" Value="{StaticResource MultipleTaskTemplate}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ContentControl.Style>
+                        </ContentControl>
+                    </DataTemplate>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" MinWidth="25" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tbTask" Grid.Column="0" Margin="0,0,5,0">
+                <TextBox.Text>
+                    <Binding Path="Input" UpdateSourceTrigger="PropertyChanged"
+                             ElementName="Control">
+                        <Binding.ValidationRules>
+                            <validators:NotEmptyValidationRule />
+                            <validators:InvalidFormatValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <Button Grid.Column="1" Click="OnButtonClick"
+                    ContentTemplate="{StaticResource AddButtonContentTemplateSelector}" />
+        </Grid>
+    </DockPanel>
+</UserControl>

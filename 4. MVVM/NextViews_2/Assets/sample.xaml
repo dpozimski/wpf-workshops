@@ -1,0 +1,14 @@
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="All:" />
+        <TextBlock Text="{Binding AllTasksCount}" />
+    </StackPanel>
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Active:" />
+        <TextBlock Text="{Binding ActiveTasksCount}" />
+    </StackPanel>
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Completed:" />
+        <TextBlock Text="{Binding CompletedTasksCount}" />
+    </StackPanel>
+</StackPanel>

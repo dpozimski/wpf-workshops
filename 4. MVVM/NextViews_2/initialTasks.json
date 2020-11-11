@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Task": "Initial",
+    "Done": false
+  },
+  {
+    "Task": "Second",
+    "Done": true
+  }
+]
