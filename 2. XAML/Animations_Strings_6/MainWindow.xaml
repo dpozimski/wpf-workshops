@@ -1,0 +1,47 @@
+﻿<Window x:Class="Animations_Strings_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animations_Strings_6"
+        Title="MainWindow" Width="800" Height="450"
+        Background="#3F3F3F" mc:Ignorable="d">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label x:Name="lbAwesome" HorizontalAlignment="Stretch"
+               VerticalAlignment="Center"
+               HorizontalContentAlignment="Center"
+               Background="Red" Foreground="Wheat"
+               Content="Awesome!" FontSize="100" />
+        <Button Grid.Row="1" Width="50" Content="Start!">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!--<StringAnimationUsingKeyFrames FillBehavior="HoldEnd"
+                                                           Storyboard.TargetName="lbAwesome"
+                                                           Storyboard.TargetProperty="Content"
+                                                           Duration="0:0:3.0">
+                                <DiscreteStringKeyFrame KeyTime="0:0:0.375" Value="A" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:0.725" Value="Aw" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:1.1" Value="Awe" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:1.475" Value="Awes" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:1.85" Value="Aweso" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:2.25" Value="Awesom" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:2.6" Value="Awesome" />
+                                <DiscreteStringKeyFrame KeyTime="0:0:3" Value="Awesome!" />
+                            </StringAnimationUsingKeyFrames>-->
+                            <DoubleAnimation Storyboard.TargetProperty="Width"
+                                             Storyboard.TargetName="lbAwesome" From="0"
+                                             To="{Binding ElementName=MainGrid, Path=ActualWidth}"
+                                             Duration="0:0:5" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+    </Grid>
+</Window>
