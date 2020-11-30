@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.WPF.Core", "ToDo.WPF.Core\ToDo.WPF.Core.csproj", "{ED6E40EE-09B0-4205-9C23-62664E2D5DA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock_1", "AvalonDock_1\AvalonDock_1.csproj", "{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6E40EE-09B0-4205-9C23-62664E2D5DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6E40EE-09B0-4205-9C23-62664E2D5DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6E40EE-09B0-4205-9C23-62664E2D5DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6E40EE-09B0-4205-9C23-62664E2D5DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC2BF1A9-49F0-46FA-9D38-A0D4631FFCD4}
+	EndGlobalSection
+EndGlobal
