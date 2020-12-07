@@ -87,6 +87,17 @@ namespace ToDo.WPF.Core
             }
         }
 
+        private void ButtonsLayout_ButtonClicked(object sender, string e)
+        {
+            switch (e)
+            {
+                case "btAll": btAll_Click(sender, null); break;
+                case "btActive": btActive_Click(sender, null); break;
+                case "btCompleted": btCompleted_Click(sender, null); break;
+                case "btStats": btStats_Click(sender, null); break;
+            };
+        }
+
         private void RegisterPropertyChangedListener(IEnumerable<ToDoItemModel> models)
         {
             foreach (var model in models)
