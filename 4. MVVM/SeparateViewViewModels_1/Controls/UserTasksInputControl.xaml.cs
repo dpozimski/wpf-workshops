@@ -52,5 +52,18 @@ namespace ToDo.WPF.Core.Controls
         {
             RaiseEvent(new RoutedEventArgs(AddEvent));
         }
+
+        protected override void OnDragEnter(DragEventArgs e)
+        {
+            base.OnDragEnter(e);
+
+            var model = e.Data.GetData(typeof(ToDoItemModel)) as ToDoItemModel;
+
+            if (model != null)
+            {
+                var cloned = new ToDoItemModel(new ToDoItem() { Task = model.Task });
+                Input = new ToDoItemModelCollection(new[] { cloned });
+            }
+        }
     }
 }

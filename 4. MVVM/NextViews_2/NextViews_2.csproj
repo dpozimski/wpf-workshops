@@ -35,6 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="Controls\TaskListView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controls\UserTasksInputControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
