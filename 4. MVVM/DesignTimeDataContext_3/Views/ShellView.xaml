@@ -3,8 +3,9 @@
                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                      xmlns:views="clr-namespace:ToDo.WPF.Core.Views" xmlns:viewModels="clr-namespace:ToDo.WPF.Core.ViewModels"
                      xmlns:wpf="http://materialdesigninxaml.net/winfx/xaml/themes" Title="ToDo" Width="450" Height="450"
-                     d:DesignHeight="450" d:DesignWidth="800" BorderThickness="1" Topmost="True"
-                     WindowStartupLocation="CenterScreen" mc:Ignorable="d">
+                     d:DesignHeight="450" d:DesignWidth="800"
+                     d:DataContext="{d:DesignInstance viewModels:ShellDesignTimeViewModel, IsDesignTimeCreatable=True}"
+                     BorderThickness="1" Topmost="True" WindowStartupLocation="CenterScreen" mc:Ignorable="d">
 
     <mahApps:MetroWindow.Flyouts>
         <mahApps:FlyoutsControl>

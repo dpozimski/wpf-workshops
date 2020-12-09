@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.WPF.Core", "ToDo.WPF.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextViews_2", "NextViews_2\NextViews_2.csproj", "{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignTimeDataContext_3", "DesignTimeDataContext_3\DesignTimeDataContext_3.csproj", "{1574B4F6-1746-483C-AE6E-E804CCFE6543}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36627AE2-EA44-44CF-BF8B-4E0A54CAE38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
