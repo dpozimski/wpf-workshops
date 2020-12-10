@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextViews_2", "NextViews_2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignTimeDataContext_3", "DesignTimeDataContext_3\DesignTimeDataContext_3.csproj", "{1574B4F6-1746-483C-AE6E-E804CCFE6543}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSources_4", "DataSources_4\DataSources_4.csproj", "{2DAC0852-1E9F-4AC9-81BD-371DE8F681F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSources_ToDo.WPF.Core_4", "DataSources_ToDo.WPF.Core_4\DataSources_ToDo.WPF.Core_4.csproj", "{98A66180-3612-49E6-BA42-F42AF7BD82D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1574B4F6-1746-483C-AE6E-E804CCFE6543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAC0852-1E9F-4AC9-81BD-371DE8F681F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAC0852-1E9F-4AC9-81BD-371DE8F681F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAC0852-1E9F-4AC9-81BD-371DE8F681F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAC0852-1E9F-4AC9-81BD-371DE8F681F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A66180-3612-49E6-BA42-F42AF7BD82D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A66180-3612-49E6-BA42-F42AF7BD82D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A66180-3612-49E6-BA42-F42AF7BD82D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A66180-3612-49E6-BA42-F42AF7BD82D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
