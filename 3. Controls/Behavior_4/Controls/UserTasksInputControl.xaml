@@ -1,12 +1,8 @@
-﻿<UserControl x:Class="ToDo.WPF.Core.Controls.UserTasksInputControl"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:converters="clr-namespace:ToDo.WPF.Core.Converters"
-             xmlns:validators="clr-namespace:ToDo.WPF.Core.Validators"
-             xmlns:local="clr-namespace:ToDo.WPF.Core" x:Name="Control"
-             d:DesignHeight="450" d:DesignWidth="150" mc:Ignorable="d">
+﻿<UserControl x:Class="ToDo.WPF.Core.Controls.UserTasksInputControl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:converters="clr-namespace:ToDo.WPF.Core.Converters"
+             xmlns:validators="clr-namespace:ToDo.WPF.Core.Validators" xmlns:local="clr-namespace:ToDo.WPF.Core" x:Name="Control" d:DesignHeight="450"
+             d:DesignWidth="150" mc:Ignorable="d">
     <DockPanel VerticalAlignment="Center" LastChildFill="True">
         <TextBlock HorizontalAlignment="Left" DockPanel.Dock="Left">What needs to be done?</TextBlock>
         <Grid Margin="5,0,0,0">

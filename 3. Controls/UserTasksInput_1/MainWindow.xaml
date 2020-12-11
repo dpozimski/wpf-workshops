@@ -4,7 +4,7 @@
                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:local="clr-namespace:ToDo.WPF.Core" Title="ToDo" Width="400"
-                  Height="450" Topmost="True"
+                  Height="450"
                   ToDoItems="{local:ToDoJsonLoader Source=initialTasks.json}"
                   mc:Ignorable="d">
     <Grid Margin="10,10,10,10">

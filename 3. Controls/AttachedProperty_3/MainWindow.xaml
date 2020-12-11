@@ -6,7 +6,7 @@
                   xmlns:local="clr-namespace:ToDo.WPF.Core"
                   xmlns:controls="clr-namespace:ToDo.WPF.Core.Controls"
                   xmlns:markups="clr-namespace:ToDo.WPF.Core.Markups" Title="ToDo"
-                  Width="450" Height="450" Topmost="True"
+                  Width="450" Height="450"
                   ToDoItems="{markups:ToDoJsonLoader Source=initialTasks.json}"
                   mc:Ignorable="d">
     <Grid Margin="10,10,10,10">
