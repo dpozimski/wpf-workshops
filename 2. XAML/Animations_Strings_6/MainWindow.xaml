@@ -1,22 +1,18 @@
-﻿<Window x:Class="Animations_Strings_6.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Animations_Strings_6"
-        Title="MainWindow" Width="800" Height="450"
-        Background="#3F3F3F" mc:Ignorable="d">
+﻿<Window x:Class="Animations_Strings_6.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Animations_Strings_6" Title="MainWindow" Width="800"
+        Height="450" Background="#3F3F3F" mc:Ignorable="d">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Label x:Name="lbAwesome" HorizontalAlignment="Stretch"
-               VerticalAlignment="Center"
-               HorizontalContentAlignment="Center"
-               Background="Red" Foreground="Wheat"
-               Content="Awesome!" FontSize="100" />
+        <Label x:Name="lbAwesome" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Center"
+               Background="Red" Foreground="Wheat" Content="Awesome!" FontSize="100" />
         <Button Grid.Row="1" Width="50" Content="Start!">
+            <Button.LayoutTransform>
+                <RotateTransform CenterX="25" CenterY="25" Angle="45" />
+            </Button.LayoutTransform>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="Button.Click">
                     <BeginStoryboard>
@@ -34,8 +30,7 @@
                                 <DiscreteStringKeyFrame KeyTime="0:0:2.6" Value="Awesome" />
                                 <DiscreteStringKeyFrame KeyTime="0:0:3" Value="Awesome!" />
                             </StringAnimationUsingKeyFrames>-->
-                            <DoubleAnimation Storyboard.TargetProperty="Width"
-                                             Storyboard.TargetName="lbAwesome" From="0"
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Storyboard.TargetName="lbAwesome" From="0"
                                              To="{Binding ElementName=MainGrid, Path=ActualWidth}"
                                              Duration="0:0:5" />
                         </Storyboard>
